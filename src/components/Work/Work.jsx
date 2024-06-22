@@ -6,7 +6,7 @@ const Work = () => {
             <p className="work-intro">PROJECTS</p>
             <div className="projects-container">
                 <div className="container-box">
-                    <img src="./1.png" alt="Project 1" />
+                    <img src="./1.PNG" alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Fresh Cart Project</p>
@@ -16,7 +16,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div className="container-box">
-                    <img src="./3.png" alt="Project 2" />
+                    <img src="./3.PNG" alt="Project 2" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">To Do List App Project</p>
@@ -32,7 +32,7 @@ const Work = () => {
 
             <div className="projects-container">
                 <div className="container-box">
-                    <img src="./Capture.png" alt="Project 1" />
+                    <img src="./Capture.PNG" alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Grading Hub Project</p>
@@ -42,7 +42,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div className="container-box">
-                    <img src="./pay.png" alt="Project 2" />
+                    <img src="./pay.PNG" alt="Project 2" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Payroll and Leave Management System Project</p>
