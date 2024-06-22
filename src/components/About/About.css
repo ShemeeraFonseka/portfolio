@@ -22,9 +22,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  width: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .skill-buttons button {
