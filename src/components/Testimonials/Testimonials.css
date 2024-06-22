@@ -1,0 +1,98 @@
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  
+  .testimonial-intro {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .wrapper {
+    background-color: transparent;
+    width: 80vw;
+    max-width: 41em;
+    max-height: 45em;
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure position for absolute navigation icons */
+    padding: 20px; /* Adjust padding as needed */
+    height: 25em;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between; /* Space out testimonial items */
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden; /* Hide overflow */
+    position: relative; /* Position for absolute testimonial items */
+  }
+  
+  .testimonial-item {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonial-item h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .testimonial-item p {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .testimonial-image {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px; /* Adjust image size as needed */
+    border-radius: 50%; /* Rounded shape */
+    margin-bottom: 15px; /* Spacing below image */
+  }
+  
+  .next {
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Adjust based on icon size */
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .pre {
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjust based on icon size */
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+ 
+    
+
+
+  

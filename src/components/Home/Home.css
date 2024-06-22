@@ -1,0 +1,140 @@
+.page-container {
+    height: 100vh;
+    display: flex;
+    background-image: url("./background.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    size: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.intro-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+margin: 50px;
+}
+
+.intro {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffff;
+    margin: 0;
+}
+
+.sub-intro {
+    font-size: 24px;
+    color: #ffff;
+    margin: 0;
+
+}
+
+.intro-content {
+    font-size: 16px;
+    color: #ffff;
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+   
+}
+
+
+
+
+
+@media (max-width: 987px) {
+    .page-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-image: url("./background.png");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .image {
+        size: 20%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .intro-content {
+        font-size: 16px;
+        color: #ffff;
+        text-align: center;
+        margin: 0;
+        line-height: 30px;
+    }
+
+    .intro {
+        font-size: 40px;
+        font-weight: bolder;
+        color: #ffff;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .sub-intro {
+        font-size: 16px;
+        color: #ffff;
+        margin: 0;
+    
+    }
+
+}
+
+@media (max-width: 375px) {
+    .intro {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #ffff;
+        margin: 0;
+    }
+}

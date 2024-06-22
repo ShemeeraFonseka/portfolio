@@ -1,0 +1,129 @@
+.touch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.touch-intro {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ffff;
+    text-align: center;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.input-field{
+    width:50rem;
+    padding: 10px;
+    margin: 20px;
+    background-color: transparent;
+    border: 2px solid #EB0824;
+    color: #ffff;
+}
+
+.text-field{
+    width:50rem;
+    padding: 10px;
+    margin: 20px;
+    background-color: transparent;
+    border: 2px solid #EB0824;
+    color: #ffff;
+    height: 10rem;
+}
+
+.submit-button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:  #EB0824;
+    border: 2px solid #EB0824;
+    border-radius: 5px;
+    color: #ffff;
+    width: 20%;
+}
+
+@media (max-width: 987px) {
+    .input-field{
+        width:30rem;
+        padding: 10px;
+        margin: 20px;
+        background-color: transparent;
+        border: 2px solid #EB0824;
+        color: #ffff;
+    }
+    
+    .text-field{
+        width:30rem;
+        padding: 10px;
+        margin: 20px;
+        background-color: transparent;
+        border: 2px solid #EB0824;
+        color: #ffff;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 545px) {
+    .input-field{
+        width:20rem;
+        padding: 10px;
+        margin: 20px;
+        background-color: transparent;
+        border: 2px solid #EB0824;
+        color: #ffff;
+    }
+    
+    .text-field{
+        width:20rem;
+        padding: 10px;
+        margin: 20px;
+        background-color: transparent;
+        border: 2px solid #EB0824;
+        color: #ffff;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 377px) {
+    .input-field{
+        width:auto;
+        padding: 10px;
+        margin: 20px;
+        background-color: transparent;
+        border: 2px solid #EB0824;
+        color: #ffff;
+    }
+    
+    .text-field{
+        width:auto;
+        padding: 10px;
+        margin: 20px;
+        background-color: transparent;
+        border: 2px solid #EB0824;
+        color: #ffff;
+        height: 10rem;
+    }
+
+    .submit-button{
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:  #EB0824;
+        border: 2px solid #EB0824;
+        border-radius: 5px;
+        color: #ffff;
+        width:auto;
+    }
+    
+}
