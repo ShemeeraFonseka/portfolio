@@ -6,7 +6,7 @@ const Work = () => {
             <p className="work-intro">PROJECTS</p>
             <div className="projects-container">
                 <div className="container-box">
-                    <img src="/1.PNG" alt="Project 1" />
+                    <img src="./1.PNG" alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Fresh Cart Project</p>
