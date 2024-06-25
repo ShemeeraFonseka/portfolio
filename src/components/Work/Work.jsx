@@ -65,7 +65,7 @@ const Work = () => {
                     <img src={homr} alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
-                        <p className="project-name">Health Wave Medial Application</p>
+                        <p className="project-name">Health Wave Medical Application</p>
                         <button className="view-button" onClick={() => window.open('https://www.behance.net/gallery/201763003/Health-Wave-Medical-Application', '_blank')}>
                             View Project
                         </button>
