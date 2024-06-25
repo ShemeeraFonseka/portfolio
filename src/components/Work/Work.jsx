@@ -1,4 +1,8 @@
 import "./Work.css";
+import freshcart from './1.PNG';
+import todo from './3.PNG';
+import capture from './Capture.PNG';
+import pay from './pay.PNG';
 
 const Work = () => {
     return (
@@ -6,7 +10,7 @@ const Work = () => {
             <p className="work-intro">PROJECTS</p>
             <div className="projects-container">
                 <div className="container-box">
-                    <img src="./1.PNG" alt="Project 1" />
+                    <img src={freshcart} alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Fresh Cart Project</p>
@@ -16,7 +20,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div className="container-box">
-                    <img src="./3.PNG" alt="Project 2" />
+                    <img src={todo} alt="Project 2" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">To Do List App Project</p>
@@ -32,7 +36,7 @@ const Work = () => {
 
             <div className="projects-container">
                 <div className="container-box">
-                    <img src="./Capture.PNG" alt="Project 1" />
+                    <img src={capture} alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Grading Hub Project</p>
@@ -42,7 +46,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div className="container-box">
-                    <img src="./pay.PNG" alt="Project 2" />
+                    <img src={pay} alt="Project 2" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Payroll and Leave Management System Project</p>

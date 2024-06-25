@@ -2,13 +2,14 @@ import "./Home.css";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
+import group from "./images/Group 1.png"
 
 const Home = () => {
 
     return (
         <div className="page-container" id="home">
             <div className="image-container">
-<img src="./Group 1.png" alt="" className="image"/>
+<img src={group} alt="" className="image"/>
             </div>
 
             <div className="intro-container">
