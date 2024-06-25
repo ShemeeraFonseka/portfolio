@@ -3,6 +3,7 @@ import freshcart from './1.PNG';
 import todo from './3.PNG';
 import capture from './Capture.PNG';
 import pay from './pay.PNG';
+import homr from './homr.png';
 
 const Work = () => {
     return (
@@ -55,6 +56,22 @@ const Work = () => {
                         </button>
                     </div>
                 </div>
+
+                
+            </div>
+
+            <div className="projects-container">
+                <div className="container-box">
+                    <img src={homr} alt="Project 1" />
+                    <div className="overlay">
+                        <div className="background-overlay"></div>
+                        <p className="project-name">Health Wave Medial Application</p>
+                        <button className="view-button" onClick={() => window.open('https://www.behance.net/gallery/201763003/Health-Wave-Medical-Application', '_blank')}>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+                
 
                 
             </div>
