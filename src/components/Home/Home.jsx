@@ -2,7 +2,7 @@ import "./Home.css";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
-import group from "./images/Group 1.png"
+import group from "./images/aa.png"
 
 const Home = () => {
 
