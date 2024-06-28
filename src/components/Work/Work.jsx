@@ -15,7 +15,7 @@ const Work = () => {
                     <div className="overlay">
                         <div className="background-overlay"></div>
                         <p className="project-name">Fresh Cart Project</p>
-                        <button className="view-button" onClick={() => window.open('https://www.behance.net/gallery/201434695/Fresh-Cart-Project', '_blank')}>
+                        <button className="view-button" onClick={() => window.open('https://www.behance.net/gallery/202001517/Fresh-Cart-Ecommerce-Application', '_blank')}>
                             View Project
                         </button>
                     </div>
