@@ -4,6 +4,7 @@ import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import nimesh from './nimesh.jpg'
 import gihan from './gihan2.jpg'
+import sonali from './sonali.jpg'
 
 // Sample testimonial data
 const testimonialData = [
@@ -14,10 +15,10 @@ const testimonialData = [
     image: nimesh, // URL to the image
   },
   {
-    name: "Miyesi Welagedara",
+    name: "Sonali Rodrigo",
     text:
       "I highly recommend Shemeera Fonseka, an exceptional Full Stack Developer. Her technical expertise and dedication ensure innovative, high-quality solutions in both front-end and back-end development. Shemeera's proactive learning and collaborative leadership inspire her team and drive outstanding performance. An invaluable asset to any organization, Shemeera is highly recommended for any development role.",
-    image: "https://via.placeholder.com/150", // URL to the image
+    image: sonali, // URL to the image
   },
   {
     name: "Gihan Fernando",
