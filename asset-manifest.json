@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c013abea.css",
-    "main.js": "/portfolio/static/js/main.d49a8c8d.js",
+    "main.js": "/portfolio/static/js/main.9a7430a0.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/homr.png": "/portfolio/static/media/homr.7601fa4bc710fa14e1e5.png",
     "static/media/gihan2.jpg": "/portfolio/static/media/gihan2.3c82e2bcc8fddd092fb5.jpg",
     "static/media/Capture.PNG": "/portfolio/static/media/Capture.77a622634ab2f01fbc0b.PNG",
     "static/media/pay.PNG": "/portfolio/static/media/pay.6211b076f140b244f6dd.PNG",
     "static/media/background.png": "/portfolio/static/media/background.9eaa405a759043e25662.png",
+    "static/media/1.PNG": "/portfolio/static/media/1.ce1d836e8eacd3558e0c.PNG",
     "static/media/sonali.jpg": "/portfolio/static/media/sonali.28467334f0655750d968.jpg",
-    "static/media/1.PNG": "/portfolio/static/media/1.15370abe705bac29f3d6.PNG",
     "static/media/aa.png": "/portfolio/static/media/aa.4cb5b79b2a0738375520.png",
     "static/media/nimesh.jpg": "/portfolio/static/media/nimesh.3f2bbcca4c17a1912d78.jpg",
     "static/media/3.PNG": "/portfolio/static/media/3.b8aa1ea979738213d353.PNG",
     "index.html": "/portfolio/index.html",
     "main.c013abea.css.map": "/portfolio/static/css/main.c013abea.css.map",
-    "main.d49a8c8d.js.map": "/portfolio/static/js/main.d49a8c8d.js.map",
+    "main.9a7430a0.js.map": "/portfolio/static/js/main.9a7430a0.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c013abea.css",
-    "static/js/main.d49a8c8d.js"
+    "static/js/main.9a7430a0.js"
   ]
 }
