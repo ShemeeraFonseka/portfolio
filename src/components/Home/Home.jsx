@@ -2,7 +2,8 @@ import "./Home.css";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
-import group from "./images/aa.png"
+import group from "./images/ww.png";
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
@@ -14,7 +15,15 @@ const Home = () => {
 
             <div className="intro-container">
                 <p className="intro">SHEMEERA FONSEKA</p>
-                <p className="sub-intro">Full Stack Developer</p><br></br><br></br>
+                <p className="sub-intro">
+                    <Typewriter
+                    options={{
+                        autoStart:true,
+                        loop:true,
+                        delay:50,
+                        strings:["I am a Full Stack Developer","I am a Web Developer"]
+                    }}/>
+                    </p><br></br><br></br>
                 <p className="intro-content">Skilled Full Stack Developer proficient in building and managing both front-end and back-end components, driving the success and functionality of complete web applications and systems. With a strong focus on user experience and performance optimization, I leverage my technical expertise to deliver innovative solutions that meet business objectives effectively. My commitment to continuous learning allows me to stay ahead in a rapidly evolving tech landscape, ensuring I can adapt and implement the latest advancements for optimal results.</p>
                    <br></br>
                     <div className="icons-container">

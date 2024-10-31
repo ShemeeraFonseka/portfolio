@@ -14,7 +14,7 @@ const Career = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#EB0824', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  #EB0824' }}
-                    date="2024 January - present"
+                    date="2024 January - 2024 July"
                     iconStyle={{ background: '#fff', color: '#fff' }}
 
                 >
