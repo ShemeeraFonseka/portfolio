@@ -4,21 +4,114 @@
     align-items: center;
     height: auto;
     justify-content: center;
-    padding-bottom: 100px;
+    padding: 40px 20px 100px;
 }
 
 .career-intro {
     margin-top: 30px;
     font-size: 40px;
     font-weight: bolder;
-    color: #ffff;
+    color: #fff;
     text-align: center;
 }
 
-
-
+/* Date styling */
 .vertical-timeline-element-date {
-  font-size: 26px !important;
-  font-weight: bold;
+    font-size: 22px !important;
+    font-weight: bold;
+    color: #ddd;
 }
 
+/* Default text inside elements */
+.vertical-timeline-element-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.vertical-timeline-element-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #bbb;
+}
+
+.vertical-timeline-element ul {
+    padding-left: 20px;
+}
+
+.vertical-timeline-element li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* ✅ Responsiveness */
+@media (max-width: 1024px) {
+    .career-intro {
+        font-size: 32px;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 24px;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 18px;
+    }
+
+    .vertical-timeline-element li {
+        font-size: 16px;
+    }
+
+    .vertical-timeline-element-date {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .career-container {
+        padding: 30px 15px 80px;
+    }
+
+    .career-intro {
+        font-size: 28px;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 22px;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 16px;
+    }
+
+    .vertical-timeline-element li {
+        font-size: 15px;
+    }
+
+    .vertical-timeline-element-date {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .career-intro {
+        font-size: 24px;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 20px;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 14px;
+    }
+
+    .vertical-timeline-element li {
+        font-size: 14px;
+    }
+
+    .vertical-timeline-element-date {
+        font-size: 16px !important;
+    }
+}

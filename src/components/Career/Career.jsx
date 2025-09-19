@@ -7,7 +7,7 @@ const Career = () => {
 
     return (
         <div className="career-container" id="career">
-            <p className="career-intro">CAREER</p>
+            <p className="career-intro">WORK EXPERIENCE</p>
 
             <VerticalTimeline>
                 <VerticalTimelineElement

@@ -15,7 +15,7 @@ import Aboutme from './components/Aboutme/Aboutme';
 function App() {
   return (
     <div>
-      <Navbar/><Home/><Aboutme/><About/><Work/><Career/><Touch/>
+      <Home/><Aboutme/><About/><Career/><Work/><Touch/>
     </div>
   );
 }

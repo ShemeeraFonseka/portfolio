@@ -10,7 +10,7 @@ import { FaBehance } from "react-icons/fa";
 const Work = () => {
     return (
         <div className="work-container" id="work">
-            <p className="work-intro">PROJECTS</p>
+            <p className="work-intro">FEATURED PROJECTS</p>
             <div className="projects-container">
                 <div className="container-box">
                     <img src={freshcart} alt="Project 1" />

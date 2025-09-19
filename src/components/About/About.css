@@ -24,12 +24,11 @@
 
 .skill-icon {
     position: relative;
-    display: inline-block;
-    width: 130px;  /* Fixed width */
-    height: 130px; /* Fixed height - same as width for square icons */
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 130px;
+    height: 130px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -37,9 +36,9 @@
 }
 
 .skill-icon img {
-    width: 80px;  /* Consistent image size */
-    height: 80px; /* Square images */
-    object-fit: cover; /* Changed from cover to contain to preserve aspect ratio */
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -54,11 +53,11 @@
     transform: scale(1.1);
 }
 
-/* Tooltip effect */
+/* Tooltip */
 .skill-icon::after {
     content: attr(data-name);
     position: absolute;
-    bottom: -35px; /* Adjusted for consistent container size */
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0,0,0,0.8);
@@ -75,4 +74,76 @@
 .skill-icon:hover::after {
     opacity: 1;
     transform: translateX(-50%) translateY(5px);
+}
+
+/* ================== Responsive ================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .about-intro {
+        font-size: 30px;
+    }
+
+    .skill-icon {
+        width: 110px;
+        height: 110px;
+    }
+
+    .skill-icon img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .about-intro {
+        font-size: 26px;
+    }
+
+    .skill-buttons {
+        gap: 18px;
+    }
+
+    .skill-icon {
+        width: 95px;
+        height: 95px;
+    }
+
+    .skill-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-icon::after {
+        font-size: 12px;
+        bottom: -28px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .about-intro {
+        font-size: 22px;
+    }
+
+    .skill-buttons {
+        gap: 14px;
+    }
+
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
+
+    .skill-icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-icon::after {
+        font-size: 11px;
+        bottom: -25px;
+    }
 }

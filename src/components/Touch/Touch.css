@@ -11,7 +11,7 @@
     margin-top: 30px;
     font-size: 40px;
     font-weight: bolder;
-    color: #ffff;
+    color: #fff;
     text-align: center;
 }
 
@@ -22,28 +22,23 @@
     align-items: center;
 }
 
-.input-field {
+.input-field,
+.text-field {
     width: 50rem;
-    padding: 10px;
-    margin: 20px;
+    max-width: 90%; /* ✅ shrink on smaller screens */
+    padding: 12px;
+    margin: 15px;
     background-color: transparent;
     border: 2px solid #969696;
-    color: #ffff;
+    color: #fff;
     font-size: 20px;
+    border-radius: 6px;
 }
 
 .text-field {
-    width: 50rem;
-    padding: 10px;
-    margin: 20px;
-    background-color: transparent;
-    border: 2px solid #969696;
-    color: #ffff;
     height: 10rem;
-    font-size: 20px;
+    resize: none;
 }
-
-
 
 .submit-button {
     background: linear-gradient(to bottom right, #4D2DB7, #2738a3);
@@ -51,13 +46,12 @@
     font-size: 18px;
     font-weight: 500;
     padding: 12px 28px;
-    border: 2px solid #857b7b33; /* subtle white border */
+    border: 2px solid #857b7b33;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 20px 10px;
 }
 
 .submit-button:hover {
@@ -66,77 +60,126 @@
     border-color: #ffffff88;
 }
 
+/* Contact layout */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap; /* ✅ ensures wrapping */
+}
+
+.contactl {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactr {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 60px;
+    min-width: 250px;
+}
+
+.contactr p {
+    color: #ffffff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Tablet */
 @media (max-width: 987px) {
-    .input-field {
-        width: 30rem;
-        padding: 10px;
-        margin: 20px;
-        background-color: transparent;
-        border: 2px solid #EB0824;
-        color: #ffff;
+    .touch-intro {
+        font-size: 32px;
     }
 
+    .input-field,
     .text-field {
         width: 30rem;
-        padding: 10px;
-        margin: 20px;
-        background-color: transparent;
-        border: 2px solid #EB0824;
-        color: #ffff;
-        height: 10rem;
+        font-size: 18px;
+    }
+
+    .contactr {
+        margin-left: 20px;
+    }
+
+    .contactr p {
+        font-size: 20px;
+    }
+
+    .contactr {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
     }
 }
 
+/* Mobile */
 @media (max-width: 545px) {
-    .input-field {
-        width: 20rem;
-        padding: 10px;
-        margin: 20px;
-        background-color: transparent;
-        border: 2px solid #EB0824;
-        color: #ffff;
+    .touch-intro {
+        font-size: 26px;
     }
 
+    .input-field,
     .text-field {
         width: 20rem;
-        padding: 10px;
-        margin: 20px;
-        background-color: transparent;
-        border: 2px solid #EB0824;
-        color: #ffff;
-        height: 10rem;
-    }
-}
-
-@media (max-width: 377px) {
-    .input-field {
-        width: auto;
-        padding: 10px;
-        margin: 20px;
-        background-color: transparent;
-        border: 2px solid #EB0824;
-        color: #ffff;
+        font-size: 16px;
     }
 
-    .text-field {
-        width: auto;
-        padding: 10px;
-        margin: 20px;
-        background-color: transparent;
-        border: 2px solid #EB0824;
-        color: #ffff;
-        height: 10rem;
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactr {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactr p {
+        font-size: 18px;
     }
 
     .submit-button {
-        margin: 10px;
         padding: 10px 20px;
         font-size: 16px;
-        background-color: #EB0824;
-        border: 2px solid #EB0824;
-        border-radius: 5px;
-        color: #ffff;
-        width: auto;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 377px) {
+    .input-field,
+    .text-field {
+        width: 100%;
+        max-width: 280px;
     }
 
+    .submit-button {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .contactr p {
+        font-size: 16px;
+    }
+
+    .contactr {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
 }
