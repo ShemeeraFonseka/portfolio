@@ -8,12 +8,14 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Touch from './components/Touch/Touch';
 import Work from './components/Work/Work';
 import Cv from './components/CV/Cv';
+import Navbar from './components/Navigation/Navbar';
+import Aboutme from './components/Aboutme/Aboutme';
 
 
 function App() {
   return (
     <div>
-      <Home/><About/><Career/><Work/><Cv/><Testimonials/><Touch/>
+      <Navbar/><Home/><Aboutme/><About/><Work/><Career/><Touch/>
     </div>
   );
 }

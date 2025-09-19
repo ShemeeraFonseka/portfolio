@@ -3,16 +3,22 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    background-color: black;
     justify-content: center;
     padding-bottom: 100px;
 }
 
 .career-intro {
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
     color: #ffff;
     text-align: center;
+}
+
+
+
+.vertical-timeline-element-date {
+  font-size: 26px !important;
+  font-weight: bold;
 }
 

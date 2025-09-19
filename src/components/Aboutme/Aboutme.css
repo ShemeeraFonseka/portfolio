@@ -1,0 +1,77 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    padding: 100px;
+}
+
+.about-intro {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffff;
+    text-align: center;
+}
+
+.intro-content {
+    font-size: 22px;
+    text-align: left;
+    line-height: 40px;
+    color: #ededed;
+}
+
+.aboutmecontent {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.left-content {
+    flex: 1;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #4D2DB7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 0;
+    font-size: 20px;
+    color: #b8b8ba;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin: 10px 0 0;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #4D2DB7;
+}

@@ -1,14 +1,12 @@
 .page-container {
-    height: 100vh;
+    height: auto;
     display: flex;
-    background-image: url("./background.png");
-    background-size: cover;
-    background-position: center;
-
+    flex-direction: column;
+    align-items: center;
 }
 
+
 .image-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,14 +15,13 @@
 
 .image {
     size: 50%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 
 
 .intro-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +29,17 @@
     margin: 50px;
 }
 
+.hello {
+    font-size: 35px;
+    font-weight:100;
+    color: #ffffff;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out, slideIn 1s ease-out;
+}
+
+
 .intro {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bolder;
     color: #ffff;
     margin: 0;
@@ -41,14 +47,14 @@
 }
 
 .sub-intro {
-    font-size: 24px;
+    font-size: 30px;
     color: #ffff;
     margin: 0;
     animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
 }
 
 .intro-content {
-    font-size: 16px;
+    font-size: 26px;
     color: #ffff;
     text-align: center;
     margin: 0;
@@ -73,6 +79,31 @@
 .icon:hover {
     transform: scale(1.2);
 }
+
+
+.homebutton {
+    background: linear-gradient(to bottom right, #4D2DB7, #2738a3);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 28px;
+    border: 2px solid #857b7b33; /* subtle white border */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.homebutton:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(9, 21, 100, 0.6);
+    border-color: #ffffff88;
+}
+
+
+
 
 
 

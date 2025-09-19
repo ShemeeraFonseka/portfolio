@@ -51,7 +51,7 @@ const Touch = () => {
                     placeholder="Message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
+                ></textarea><br />
                 <button type="submit" className="submit-button">Send</button>
             </form>
         </div>

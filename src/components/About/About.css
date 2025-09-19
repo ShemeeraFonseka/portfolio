@@ -3,9 +3,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    background-color: black;
     justify-content: center;
-    padding-bottom: 100px;
 }
 
 .about-intro {
@@ -18,28 +16,63 @@
 
 .skill-buttons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.skill-icon {
+    position: relative;
+    display: inline-block;
+    width: 130px;  /* Fixed width */
+    height: 130px; /* Fixed height - same as width for square icons */
+    display: flex;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
-.skill-buttons button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: transparent;
-    border: 2px solid #EB0824;
-    border-radius: 5px;
-    color: #ffff;
-
+.skill-icon img {
+    width: 80px;  /* Consistent image size */
+    height: 80px; /* Square images */
+    object-fit: cover; /* Changed from cover to contain to preserve aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.skill-buttons button:hover {
-    background-color: #EB0824;
-    color: #000000;
-    font-weight: bold;
+.skill-icon:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
+.skill-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Tooltip effect */
+.skill-icon::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -35px; /* Adjusted for consistent container size */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.skill-icon:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(5px);
+}
