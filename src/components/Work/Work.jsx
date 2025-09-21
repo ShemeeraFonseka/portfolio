@@ -1,11 +1,12 @@
 import "./Work.css";
 import freshcart from './1.png';
-import todo from './3.PNG';
+import todo from './3.png';
 import capture from './Capture.PNG';
 import pay from './pay.PNG';
 import homr from './homr.png';
 import { GrGithub } from "react-icons/gr";
 import { FaBehance } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 
 const Work = () => {
     return (
@@ -32,7 +33,7 @@ const Work = () => {
                         <p className="project-des">To-Do List Application</p>
                         <div>
                         <GrGithub className="view-button" size={82} onClick={() => window.open('https://github.com/ShemeeraFonseka/todolist', '_blank')}/>
-                        <FaBehance className="view-button" size={82} onClick={() => window.open('https://www.behance.net/gallery/201516581/To-Do-List-App', '_blank')}/>
+                        <FaEye className="view-button" size={82} onClick={() => window.open('https://shemeerafonseka.github.io/todolist/', '_blank')}/>
                     </div>
                     </div>
                 </div>
