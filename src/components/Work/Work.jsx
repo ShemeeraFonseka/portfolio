@@ -1,5 +1,5 @@
 import "./Work.css";
-import freshcart from './1.PNG';
+import freshcart from './1.png';
 import todo from './3.PNG';
 import capture from './Capture.PNG';
 import pay from './pay.PNG';
@@ -16,11 +16,11 @@ const Work = () => {
                     <img src={freshcart} alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
-                        <p className="project-name">Fresh Cart</p>
+                        <p className="project-name">SYOS Store and Billing System</p>
                         <p className="project-des">Ecommerce Web Application</p>
                        <div>
-                        <GrGithub className="view-button" size={82} onClick={() => window.open('https://github.com/ShemeeraFonseka/Freshcart', '_blank')}/>
-                        <FaBehance className="view-button" size={82} onClick={() => window.open('https://www.behance.net/gallery/202001517/Fresh-Cart-Ecommerce-Application', '_blank')}/>
+                        <GrGithub className="view-button" size={82} onClick={() => window.open('https://github.com/ShemeeraFonseka/SYOS', '_blank')}/>
+                        <FaBehance className="view-button" size={82} onClick={() => window.open('https://www.behance.net/gallery/235051009/SYOS-Store-and-Billing-System', '_blank')}/>
                     </div>
                     </div>
                 </div>
