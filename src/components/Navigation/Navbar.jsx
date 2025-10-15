@@ -14,6 +14,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <h1 className="navbar-logo">Shemeera</h1>
+      
       {/* Mobile menu toggle button */}
       <button 
         className="menu-toggle" 

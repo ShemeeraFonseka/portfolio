@@ -2,7 +2,7 @@ import "./Home.css";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
-import group from "./images/ww.png";
+import group from "./images/yy.jpg";
 import Typewriter from 'typewriter-effect';
 import { FaFileAlt } from "react-icons/fa";
 
@@ -10,15 +10,10 @@ const Home = () => {
 
     return (
         <div className="page-container" id="home">
-            <div className="image-container">
-                <img src={group} alt="" className="image" />
-                <br />
-
-            </div>
 
             <div className="intro-container">
 
-                <p className="intro">SHEMEERA FONSEKA</p>
+                <p className="intro">Shemeera Fonseka</p>
                 <p className="sub-intro">
                     Full Stack Developer
                 </p>
@@ -47,6 +42,14 @@ const Home = () => {
                 </div>
 
             </div>
+
+            <div className="image-container">
+                <img src={group} alt="" className="image" />
+                <br />
+
+            </div>
+
+            
 
         </div>
     )

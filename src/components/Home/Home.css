@@ -1,11 +1,12 @@
 .page-container {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 0;
     flex-wrap: wrap; /* allows stacking on smaller screens */
+      padding: 100px 100px;
 }
 
 .image-container {
@@ -30,8 +31,7 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 50px;
+    align-items: flex-start;
     text-align: center; /* center text on smaller screens */
 }
 
@@ -61,10 +61,9 @@
 .hintro-content {
     font-size: 23px;
     color: #ffffff;
-    text-align: justify;
+    text-align: left;
     margin: 0;
     line-height: 35px;
-    padding: 0 20px;
 }
 
 .icons-container {

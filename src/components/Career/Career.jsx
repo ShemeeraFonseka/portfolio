@@ -1,71 +1,78 @@
-
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import "./Career.css";
+// Career.jsx
+import React from 'react';
+import { Briefcase, Calendar } from 'lucide-react';
+import './Career.css';
 
 const Career = () => {
+    const experiences = [
+        {
+            id: 1,
+            title: "Intern Software Developer",
+            company: "Asia Lanka Developers",
+            date: "November 2024 - May 2025",
+            responsibilities: [
+                "Developed and maintained responsive web applications using modern front-end and back-end technologies.",
+                "Customized and deployed robust Point of Sale (POS) systems tailored to specific client requirements.",
+                "Designed scalable and reusable UI/UX components to enhance consistency across projects.",
+                "Collaborated with clients to gather requirements and deliver effective, user-centric solutions.",
+                "Managed projects end-to-end, ensuring timely delivery, code quality, and stakeholder satisfaction."
+            ]
+        },
+        {
+            id: 2,
+            title: "Trainee ICT Directorate",
+            company: "Sri Lanka Customs",
+            date: "January 2024 - July 2024",
+            responsibilities: [
+                "Joined the development team as a fresh graduate, embarking on my career journey.",
+                "Rapidly acquired proficiency in React to integrate ongoing projects.",
+                "Translated designed templates into functional application versions.",
+                "Created web services to enhance communication capabilities.",
+                "Engaged in on-site troubleshooting sessions and provided customer support as needed.",
+                "Assisted senior developers in implementing intricate logic and solutions."
+            ]
+        }
+    ];
 
     return (
-        <div className="career-container" id="career">
-            <p className="career-intro">WORK EXPERIENCE</p>
+        <div className="career-section" id="career">
+            <div className="career-header">
+                <h2 className="career-title">Work Experience</h2>
+                <div className="career-underline"></div>
+            </div>
 
-            <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#26196cff', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #26196cff' }}
-                    date="2024 November - 2025 May"
-                    iconStyle={{ background: '#fff', color: '#fff' }}
+            <div className="timeline-container">
+                {experiences.map((exp, index) => (
+                    <div key={exp.id} className="timeline-item" style={{ animationDelay: `${index * 0.2}s` }}>
+                        <div className="timeline-connector">
+                            <div className="timeline-icon">
+                                <Briefcase size={24} />
+                            </div>
+                            {index < experiences.length - 1 && <div className="timeline-line"></div>}
+                        </div>
 
-                >
-                    <h3 className="vertical-timeline-element-title" style={{ fontSize: '30px' }}> Intern Software Developer</h3>
-                    <h4 className="vertical-timeline-element-subtitle" style={{ fontSize: '20px' }}> Asia Lanka Developers</h4><br />
-                    <ul>
-                        <li style={{ fontSize: '18px' }}> Developed and maintained responsive web applications using modern front
-                            end and back-end technologies.</li>
-                        <li style={{ fontSize: '18px' }}>Customized and deployed robust Point of Sale (POS) systems tailored to
-                            specific client requirements.</li>
-                        <li style={{ fontSize: '18px' }}>Designed scalable and reusable UI/UX components to enhance consistency
-                            across projects.</li>
-                        <li style={{ fontSize: '18px' }}> Collaborated with clients to gather requirements and deliver effective, user
-                            centric solutions.</li>
-                        <li style={{ fontSize: '18px' }}> Managed projects end-to-end, ensuring timely delivery, code quality, and
-                            stakeholder satisfaction.</li>
-                    </ul>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#26196cff', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #26196cff' }}
-                    date="2024 January - 2024 July"
-                    dateClassName="custom-date"
-                    iconStyle={{ background: '#fff', color: '#fff' }}
-
-                >
-                    <h3 className="vertical-timeline-element-title" style={{ fontSize: '30px' }}>Trainee ICT Directorate</h3>
-                    <h4 className="vertical-timeline-element-subtitle" style={{ fontSize: '20px' }}>Sri Lanka Customs</h4><br />
-                    <ul>
-                        <li style={{ fontSize: '18px' }}>Joined the development team as a fresh graduate, embarking on my career journey.</li>
-                        <li style={{ fontSize: '18px' }}>Rapidly acquired proficiency in React to integrate ongoing projects.</li>
-                        <li style={{ fontSize: '18px' }}>Translated designed templates into functional application versions.</li>
-                        <li style={{ fontSize: '18px' }}>Created web services to enhance communication capabilities.</li>
-                        <li style={{ fontSize: '18px' }}> Engaged in on-site troubleshooting sessions and provided customer support as needed.</li>
-                        <li style={{ fontSize: '18px' }}>Assisted senior developers in implementing intricate logic and solutions.</li>
-                    </ul>
-                </VerticalTimelineElement>
-
-                
-
-
-
-
-            </VerticalTimeline>
-
-
+                        <div className="timeline-content">
+                            <div className="timeline-date">
+                                <Calendar size={18} />
+                                <span>{exp.date}</span>
+                            </div>
+                            
+                            <div className="timeline-card">
+                                <h3 className="job-title">{exp.title}</h3>
+                                <h4 className="company-name">{exp.company}</h4>
+                                
+                                <ul className="responsibilities-list">
+                                    {exp.responsibilities.map((resp, idx) => (
+                                        <li key={idx}>{resp}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
-    )
-
-}
+    );
+};
 
 export default Career;

@@ -1,14 +1,22 @@
 /* Navbar Container */
 .navbar {
-  background-color: #060925;
-  padding: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  padding: 20px 100px;
   top: 0;
   z-index: 1000;
-  display: flex;                  /* Make navbar a flexbox */
-  justify-content: center;        /* Center contents */
+  display: flex;
+  justify-content: space-between;  /* Changed from flex-end to space-between */
   align-items: center;
+  position: sticky;
+background-color: #050b31;
+
+}
+
+/* Navbar Logo/Name */
+.navbar-logo {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* Navigation List */
@@ -17,8 +25,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 5px;
 }
 
@@ -33,7 +39,7 @@
   color: white;
   text-decoration: none;
   padding: 1rem 1.5rem;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
@@ -94,6 +100,7 @@
   
   .menu-toggle {
     display: block;
+    margin-left: auto;  /* Push menu toggle to the right */
   }
   
   /* Make navbar container relative for absolute positioning */
@@ -104,6 +111,14 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 480px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 20px;
+  }
+  
   .navbar li a {
     padding: 0.8rem;
     font-size: 0.9rem;
