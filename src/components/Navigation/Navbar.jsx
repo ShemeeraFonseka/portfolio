@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css'; // Import the CSS file
+import './Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,14 +9,13 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    setIsMenuOpen(false); // Close menu when a link is clicked
+    setIsMenuOpen(false);
   };
 
   return (
     <nav className="navbar">
       <h1 className="navbar-logo">Shemeera</h1>
       
-      {/* Mobile menu toggle button */}
       <button 
         className="menu-toggle" 
         onClick={toggleMenu}
@@ -25,8 +24,7 @@ const Navbar = () => {
         ☰
       </button>
       
-      {/* Navigation menu */}
-      <ul className={isMenuOpen ? 'active' : ''}>
+      <ul className={isMenuOpen ? 'nav-list active' : 'nav-list'}>
         <li><a href="#home" onClick={handleLinkClick}>Home</a></li>
         <li><a href="#aboutme" onClick={handleLinkClick}>About</a></li>
         <li><a href="#about" onClick={handleLinkClick}>Skills</a></li>

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; // Import EmailJS
+import emailjs from 'emailjs-com';
 import { SiGmail } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-
 import './Touch.css';
 
 const Touch = () => {
@@ -21,11 +20,13 @@ const Touch = () => {
             message
         };
 
-        // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual EmailJS IDs
         emailjs.send('service_vunoib8', 'template_v9unwf3', templateParams, 'soFQR3l3kCMKLYla3')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 alert('Email sent successfully');
+                setName('');
+                setEmail('');
+                setMessage('');
             }, (error) => {
                 console.error('FAILED...', error);
                 alert('Failed to send email');
@@ -34,12 +35,10 @@ const Touch = () => {
 
     return (
         <div className="touch-container" id="touch">
-            <p className="touch-intro">CONTACT ME</p><br />
+            <p className="touch-intro">CONTACT ME</p>
 
             <div className='contact-container'>
-
-
-                <div className='contactl'>
+                <div className='contact-left'>
                     <form className="email-form" onSubmit={handleSubmit}>
                         <input
                             className="input-field"
@@ -47,6 +46,7 @@ const Touch = () => {
                             placeholder="Name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
+                            required
                         />
                         <input
                             className="input-field"
@@ -54,48 +54,47 @@ const Touch = () => {
                             placeholder="Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
+                            required
                         />
                         <textarea
                             className="text-field"
                             placeholder="Message"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                        ></textarea><br />
+                            required
+                        ></textarea>
                         <button type="submit" className="submit-button">Send</button>
                     </form>
                 </div>
 
-                <div className='contactr'>
-                    <p>
-                        <SiGmail size={30} style={{ marginRight: '30px' }} />
-                        <a href="mailto:shemeeraFonseka@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color:'#ffff'}}>
+                <div className='contact-right'>
+                    <div className="contact-item">
+                        <SiGmail className="contact-icon" size={30} />
+                        <a href="mailto:shemeeraFonseka@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-link">
                             shemeerafonseka@gmail.com
                         </a>
-                    </p>
+                    </div>
 
-                    <p>
-                        <FaPhoneAlt size={30} style={{ marginRight: '30px' }} />
-                        <a href="tel:+94741985282" style={{ color:'#ffff'}}>
+                    <div className="contact-item">
+                        <FaPhoneAlt className="contact-icon" size={30} />
+                        <a href="tel:+94741985282" className="contact-link">
                             +9474 198 5282
                         </a>
-                    </p>
+                    </div>
 
-                    <p>
-                        <FaLinkedin size={30} style={{ marginRight: '30px' }} />
-                        <a href="https://www.linkedin.com/in/shemeera-fonseka" target="_blank" rel="noopener noreferrer" style={{ color:'#ffff'}}>
+                    <div className="contact-item">
+                        <FaLinkedin className="contact-icon" size={30} />
+                        <a href="https://www.linkedin.com/in/shemeera-fonseka" target="_blank" rel="noopener noreferrer" className="contact-link">
                             www.linkedin.com/in/shemeera-fonseka
                         </a>
-                    </p>
+                    </div>
 
-                    <p>
-                        <FaLocationDot size={30} style={{ marginRight: '30px' }} />
-                        Colombo, Sri Lanka
-                    </p>
+                    <div className="contact-item">
+                        <FaLocationDot className="contact-icon" size={30} />
+                        <span className="contact-text">Colombo, Sri Lanka</span>
+                    </div>
                 </div>
-
             </div>
-
-
         </div>
     );
 };

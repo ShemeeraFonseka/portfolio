@@ -113,7 +113,8 @@
     .page-container {
         flex-direction: column;
         height: auto;
-        margin-top: 20px;
+        padding: 60px 20px;
+        
     }
 
     .intro {
@@ -127,6 +128,7 @@
     .hintro-content {
         font-size: 20px;
         line-height: 30px;
+        text-align: center;
     }
 
     .image {
@@ -139,6 +141,12 @@
 @media (max-width: 768px) {
     .intro-container {
         margin: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-container{
+        padding: 60px 20px;
     }
 
     .hello {
@@ -200,4 +208,6 @@
         width: 100%;
         max-width: 250px;
     }
+
+    
 }

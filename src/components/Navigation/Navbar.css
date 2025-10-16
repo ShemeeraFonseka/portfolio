@@ -4,11 +4,10 @@
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;  /* Changed from flex-end to space-between */
+  justify-content: space-between;
   align-items: center;
   position: sticky;
-background-color: #050b31;
-
+  background-color: #050b31;
 }
 
 /* Navbar Logo/Name */
@@ -17,43 +16,6 @@ background-color: #050b31;
   margin: 0;
   font-size: 40px;
   font-weight: bold;
-}
-
-/* Navigation List */
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 5px;
-}
-
-/* Navigation Items */
-.navbar li {
-  margin: 0;
-}
-
-/* Navigation Links */
-.navbar li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 1rem 1.5rem;
-  font-size: 20px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* Hover Effects */
-.navbar li a:hover {
-  background-color: #4D2DB7;
-  color: #fff;
-}
-
-/* Active Link (optional) */
-.navbar li a.active {
-  background-color: #007bff;
 }
 
 /* Mobile Menu Toggle Button (hidden by default) */
@@ -67,49 +29,86 @@ background-color: #050b31;
   cursor: pointer;
 }
 
-/* Tablet Styles */
+/* Navigation List */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Items */
+.nav-list li {
+  margin: 0;
+}
+
+/* Navigation Links */
+.nav-list li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effects */
+.nav-list li a:hover {
+  background-color: #4D2DB7;
+  color: #fff;
+}
+
+/* Active Link (optional) */
+.nav-list li a.active {
+  background-color: #4D2DB7;
+}
+
+/* Tablet and Mobile Styles */
 @media screen and (max-width: 768px) {
-  .navbar ul {
+  .navbar {
+    position: relative;
+    padding: 20px 40px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-list {
     flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #333;
-    display: none;
+    background-color: #050b31;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
   }
   
-  .navbar ul.active {
+  .nav-list.active {
     display: flex;
   }
   
-  .navbar li {
+  .nav-list li {
     width: 100%;
     text-align: center;
   }
   
-  .navbar li a {
+  .nav-list li a {
     padding: 1rem;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #1a2555;
   }
   
-  .navbar li:last-child a {
+  .nav-list li:last-child a {
     border-bottom: none;
-  }
-  
-  .menu-toggle {
-    display: block;
-    margin-left: auto;  /* Push menu toggle to the right */
-  }
-  
-  /* Make navbar container relative for absolute positioning */
-  .navbar {
-    position: relative;
   }
 }
 
-/* Mobile Styles */
+/* Small Mobile Styles */
 @media screen and (max-width: 480px) {
   .navbar {
     padding: 15px 20px;
@@ -119,26 +118,13 @@ background-color: #050b31;
     font-size: 20px;
   }
   
-  .navbar li a {
+  .nav-list li a {
     padding: 0.8rem;
-    font-size: 0.9rem;
+    font-size: 16px;
   }
   
   .menu-toggle {
     font-size: 1.3rem;
     padding: 0.8rem;
-  }
-}
-
-/* Optional: Smooth slide animation for mobile menu */
-@media screen and (max-width: 768px) {
-  .navbar ul {
-    transform: translateY(-100%);
-    transition: all 0.3s ease;
-    display: flex;
-  }
-  
-  .navbar ul.active {
-    transform: translateY(0);
   }
 }
