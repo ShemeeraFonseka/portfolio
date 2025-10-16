@@ -3,7 +3,7 @@ import freshcart from './1.png';
 import todo from './3.png';
 import capture from './Capture.PNG';
 import pay from './pay.PNG';
-import homr from './homr.png';
+import personal from './personal.png';
 import { GrGithub } from "react-icons/gr";
 import { FaBehance } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
@@ -67,6 +67,24 @@ const Work = () => {
                     </div>
                     </div>
                 </div>
+
+                
+            </div>
+
+
+            <div className="projects-container">
+                <div className="container-box">
+                    <img src={personal} alt="Project 1" />
+                    <div className="overlay">
+                        <div className="background-overlay"></div>
+                        <p className="project-name">Portfolio Website</p>
+                        <p className="project-des">Personal Portfolio Website</p>
+                        <div>
+                        <GrGithub className="view-button" size={82} onClick={() => window.open('https://github.com/ShemeeraFonseka/portfolio', '_blank')}/>
+<FaEye className="view-button" size={82} onClick={() => window.open('https://shemeerafonseka.github.io/portfolio/', '_blank')}/>                    </div>
+                    </div>
+                </div>
+              
 
                 
             </div>
