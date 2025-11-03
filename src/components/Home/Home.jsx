@@ -15,7 +15,7 @@ const Home = () => {
 
                 <p className="intro">Shemeera Fonseka</p>
                 <p className="sub-intro">
-                    Full Stack Developer
+                    Software Engineer
                 </p>
                 <br />
                 <p className="hintro-content">
