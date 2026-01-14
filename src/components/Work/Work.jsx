@@ -13,6 +13,34 @@ const Work = () => {
     return (
         <div className="work-container" id="work">
             <p className="work-intro">FEATURED PROJECTS</p>
+
+             <div className="projects-container">
+                <div className="container-box">
+                    <img src={personal} alt="Project 1" />
+                    <div className="overlay">
+                        <div className="background-overlay"></div>
+                        <p className="project-name">Portfolio Website</p>
+                        <p className="project-des">Personal Portfolio Website</p>
+                        <div>
+                            <FaEye className="view-button" size={82} onClick={() => window.open('https://shemeerafonseka.github.io/portfolio/', '_blank')} />                    </div>
+                    </div>
+                </div>
+
+                <div className="container-box">
+                    <img src={tourist} alt="Project 1" />
+                    <div className="overlay">
+                        <div className="background-overlay"></div>
+                        <p className="project-name">Tourist Website</p>
+                        <p className="project-des">Travel Agency Website</p>
+                        <div>
+                            <FaEye className="view-button" size={82} onClick={() => window.open('https://tourist-frontend-duzs.vercel.app/', '_blank')} />                    </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            
             <div className="projects-container">
                 <div className="container-box">
                     <img src={freshcart} alt="Project 1" />
@@ -69,32 +97,7 @@ const Work = () => {
             </div>
 
 
-            <div className="projects-container">
-                <div className="container-box">
-                    <img src={personal} alt="Project 1" />
-                    <div className="overlay">
-                        <div className="background-overlay"></div>
-                        <p className="project-name">Portfolio Website</p>
-                        <p className="project-des">Personal Portfolio Website</p>
-                        <div>
-                            <FaEye className="view-button" size={82} onClick={() => window.open('https://shemeerafonseka.github.io/portfolio/', '_blank')} />                    </div>
-                    </div>
-                </div>
-
-                <div className="container-box">
-                    <img src={tourist} alt="Project 1" />
-                    <div className="overlay">
-                        <div className="background-overlay"></div>
-                        <p className="project-name">Tourist Website</p>
-                        <p className="project-des">Travel Agency Website</p>
-                        <div>
-                            <FaEye className="view-button" size={82} onClick={() => window.open('https://tourist-frontend-duzs.vercel.app/', '_blank')} />                    </div>
-                    </div>
-                </div>
-
-
-
-            </div>
+           
         </div>
     );
 }

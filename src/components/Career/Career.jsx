@@ -7,6 +7,32 @@ const Career = () => {
     const experiences = [
         {
             id: 1,
+            title: "Software Developer",
+            company: "Midiz",
+            date: "December 2025 - Present",
+            responsibilities: [
+                "Developing and maintaining scalable web applications using modern frameworks and technologies.",
+                "Designing and implementing new features, fixing bugs, and optimizing system performance.",
+                "Integrating third-party and internal APIs and managing databases to support business operations.",
+                "Building responsive, user-friendly interfaces while working closely with UI/UX designers.",
+                "Collaborating with cross-functional teams to deliver reliable, secure, and high-quality software solutions."
+            ]
+        },
+        {
+            id: 2,
+            title: "Software Development Intern",
+            company: "Flego Innovation",
+            date: "June 2025 - Present",
+            responsibilities: [
+                "Assisting the development team with multiple projects and day-to-day technical tasks.",
+                "Developing, testing, and maintaining web applications using modern technologies.",
+                "Contributing creative ideas and technical solutions to ongoing projects.",
+                "Communicating and collaborating with clients and internal teams in a professional manner.",
+                "Managing assigned tasks efficiently, meeting deadlines, and reporting progress regularly."
+            ]
+        },
+        {
+            id: 3,
             title: "Intern Software Developer",
             company: "Asia Lanka Developers",
             date: "November 2024 - May 2025",
@@ -19,7 +45,7 @@ const Career = () => {
             ]
         },
         {
-            id: 2,
+            id: 4,
             title: "Trainee ICT Directorate",
             company: "Sri Lanka Customs",
             date: "January 2024 - July 2024",
