@@ -26,9 +26,9 @@ const Navbar = () => {
 
       <ul className={isMenuOpen ? 'nav-list active' : 'nav-list'}>
         <li><a href="#home" onClick={handleLinkClick}>Home</a></li>
-        <li><a href="#aboutme" onClick={handleLinkClick}>About</a></li>
-        <li><a href="#about" onClick={handleLinkClick}>Skills</a></li>
-        <li><a href="#career" onClick={handleLinkClick}>Experience</a></li>
+        <li><a href="#aboutme" onClick={handleLinkClick}>Education</a></li>
+        <li><a href="#about" onClick={handleLinkClick}>Technology Stack</a></li>
+        <li><a href="#career" onClick={handleLinkClick}>Work Experience</a></li>
         <li><a href="#work" onClick={handleLinkClick}>Projects</a></li>
         <li><a href="#touch" onClick={handleLinkClick}>Contact</a></li>
       </ul>

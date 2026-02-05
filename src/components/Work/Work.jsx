@@ -4,7 +4,7 @@ import todo from './3.png';
 import capture from './Capture.PNG';
 import pay from './pay.PNG';
 import personal from './personal.png';
-import tourist from './tourist.png';
+import vip from './vip.png';
 import { GrGithub } from "react-icons/gr";
 import { FaBehance } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
@@ -27,13 +27,13 @@ const Work = () => {
                 </div>
 
                 <div className="container-box">
-                    <img src={tourist} alt="Project 1" />
+                    <img src={vip} alt="Project 1" />
                     <div className="overlay">
                         <div className="background-overlay"></div>
-                        <p className="project-name">Tourist Website</p>
-                        <p className="project-des">Travel Agency Website</p>
+                        <p className="project-name">VIP Tours</p>
+                        <p className="project-des">Tour Booking Website with Admin Panel</p>
                         <div>
-                            <FaEye className="view-button" size={82} onClick={() => window.open('https://tourist-frontend-duzs.vercel.app/', '_blank')} />                    </div>
+                            <FaEye className="view-button" size={82} onClick={() => window.open('https://vipfrontend.vercel.app/', '_blank')} />                    </div>
                     </div>
                 </div>
 
