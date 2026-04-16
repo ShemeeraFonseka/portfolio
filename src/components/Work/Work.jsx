@@ -1,6 +1,6 @@
 import "./Work.css";
-import freshcart from "./1.png";
-import todo from "./3.png";
+import freshcart from "./freshcart.png";
+import todo from "./todo.png";
 import capture from "./Capture.PNG";
 import pay from "./pay.PNG";
 import personal from "./personal.png";
