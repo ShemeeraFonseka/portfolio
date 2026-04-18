@@ -1,38 +1,63 @@
 import "./Aboutme.css";
 
 const Aboutme = () => {
-    return (
-        <div className="about-container" id="aboutme">
-            <p className="about-intro">EDUCATION</p>
-            <br />
-            <div className="aboutmecontent">
-                {/* Left side - intro */}
-                
+  return (
+    <section className="edu-section" id="aboutme">
+      <div className="section-tag">Background</div>
 
-                {/* Right side - cards */}
-                <div className="right-content">
-                    <div className="card">
-                        <h3>BEng (Hons) Software Engineering</h3>
-                        <p> Staffordshire University, UK</p>
-                        <p>2024 - 2025</p>
-                    </div>
-                    <div className="card">
-                        <h3>Higher National Diploma in Software Engineering</h3>
-                        <p> National Institute of Business Management</p>
-                        <p>2022 - 2024</p>
-                    </div>
+      <h2 className="section-heading">
+        Education &amp; <span>Qualifications</span>
+      </h2>
+      <p className="section-sub">
+        Academic foundations that shaped my approach to engineering and
+        problem-solving.
+      </p>
 
-                    <div className="card">
-                        <h3>Diploma in Computer System Design</h3>
-                        <p> National Institute of Business Management</p>
-                        <p>2021 - 2022</p>
-                    </div>
-
-
-                </div>
-            </div>
+      <div className="edu-grid">
+        <div className="edu-card">
+          <div className="edu-card-glow" />
+          <div className="edu-year">
+            <div className="edu-year-dot" />
+            2024 – 2025
+          </div>
+          <div className="edu-icon">🎓</div>
+          <div className="edu-degree">BEng (Hons) Software Engineering</div>
+          <div className="edu-divider" />
+          <div className="edu-school">Staffordshire University, UK</div>
         </div>
-    )
-}
+
+        <div className="edu-card">
+          <div className="edu-card-glow" />
+          <div className="edu-year">
+            <div className="edu-year-dot" />
+            2022 – 2024
+          </div>
+          <div className="edu-icon">📚</div>
+          <div className="edu-degree">
+            Higher National Diploma in Software Engineering
+          </div>
+          <div className="edu-divider" />
+          <div className="edu-school">
+            National Institute of Business Management
+          </div>
+        </div>
+
+        <div className="edu-card">
+          <div className="edu-card-glow" />
+          <div className="edu-year">
+            <div className="edu-year-dot" />
+            2021 – 2022
+          </div>
+          <div className="edu-icon">💻</div>
+          <div className="edu-degree">Diploma in Computer System Design</div>
+          <div className="edu-divider" />
+          <div className="edu-school">
+            National Institute of Business Management
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Aboutme;

@@ -11,12 +11,10 @@ const Home = () => {
         <div className="hero-tag">Available for work</div>
 
         <h1 className="hero-name">
-          Shemeera
-          <br />
-          <span>Fonseka</span>
+          Shemeera <span>Fonseka</span>
         </h1>
 
-        <p className="hero-role">Full Stack Developer &amp; CS Student</p>
+        <p className="hero-role">Full Stack Developer</p>
 
         <div className="hero-divider" />
 
