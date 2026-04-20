@@ -2,7 +2,7 @@ import "./Home.css";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin, FaBehance, FaFileAlt } from "react-icons/fa";
 import { MdOutlineDesktopWindows } from "react-icons/md";
-import group from "./images/yy.jpg";
+import group from "./images/yy.png";
 
 const Home = () => {
   return (
