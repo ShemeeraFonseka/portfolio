@@ -1,113 +1,134 @@
 import "./About.css";
-import html from "./ht.png";
-import css from "./css.png";
-import js from "./js.png";
-import react from "./react.png";
 
-import java from "./java.png";
-import rest from "./rest.png";
-import spring from "./spring.png";
-import php from "./php.png";
-import node from "./node.png";
-import python from "./python.png";
-
-import my from "./my.png";
-import ms from "./ms.png";
-import mongo from "./mongo.png";
-
-import figma from "./figma.png";
-import AI from "./AI.png";
-import PS from "./PS.png";
-import In from "./In.png";
-
-import git from "./git.png";
-import github from "./github.png";
-import cpanel from "./cpanel.png";
+const skills = {
+  Frontend: [
+    {
+      name: "HTML5",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS3",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    },
+    {
+      name: "JavaScript",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "React",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+  ],
+  Backend: [
+    {
+      name: "Java",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    },
+    {
+      name: "Spring Boot",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+    },
+    {
+      name: "Node.js",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "PHP",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    },
+    {
+      name: "Python",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
+      name: "REST API",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    },
+  ],
+  Databases: [
+    {
+      name: "MySQL",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    },
+    {
+      name: "MS SQL Server",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
+    },
+    {
+      name: "MongoDB",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+  ],
+  Design: [
+    {
+      name: "Figma",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    },
+    {
+      name: "Adobe Illustrator",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
+    },
+    {
+      name: "Adobe Photoshop",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+    },
+    {
+      name: "Adobe InDesign",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg",
+    },
+  ],
+  "Tools & DevOps": [
+    {
+      name: "Git",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    },
+    {
+      name: "GitHub",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    },
+    {
+      name: "cPanel",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    },
+  ],
+};
 
 const About = () => {
+  return (
+    <section className="stack-section" id="about">
+      <div className="stack-blob1" />
+      <div class="stack-blob2" />
 
-    return (
-        <div className="about-container" id="about">
-            <p className="about-intro">TECHNOLOGY STACK</p>
-            <br />
-            <div className="skill-buttons">
-                <div className="skill-icon" data-name="HTML5">
-                    <img src={html} alt="HTML5" />
-                </div>
-                <div className="skill-icon" data-name="CSS3">
-                    <img src={css} alt="CSS3" />
-                </div>
-                <div className="skill-icon" data-name="JavaScript">
-                    <img src={js} alt="JavaScript" />
-                </div>
-                <div className="skill-icon" data-name="React">
-                    <img src={react} alt="React" />
-                </div>
+      <div className="section-tag">Skills</div>
+      <h2 className="section-heading">
+        Technology <span>Stack</span>
+      </h2>
+      <p className="section-sub">
+        Tools and technologies I use to build full-stack, end-to-end products.
+      </p>
+
+      <div className="stack-groups">
+        {Object.entries(skills).map(([category, items]) => (
+          <div className="stack-group" key={category}>
+            <div className="group-label">
+              <div className="group-label-line" />
+              {category}
             </div>
-
-            <div className="skill-buttons">
-                <div className="skill-icon" data-name="Java">
-                    <img src={java} alt="Java" />
+            <div className="skills-row">
+              {items.map((skill) => (
+                <div className="skill-pill" key={skill.name}>
+                  <div className="pill-img-wrap">
+                    <img src={skill.src} alt={skill.name} />
+                  </div>
+                  <span className="pill-name">{skill.name}</span>
                 </div>
-                <div className="skill-icon" data-name="REST API">
-                    <img src={rest} alt="REST API" />
-                </div>
-                <div className="skill-icon" data-name="SpringBoot">
-                    <img src={spring} alt="SpringBoot" />
-                </div>
-                <div className="skill-icon" data-name="PHP">
-                    <img src={php} alt="PHP" />
-                </div>
-                <div className="skill-icon" data-name="Node.js">
-                    <img src={node} alt="Node.js" />
-                </div>
-                <div className="skill-icon" data-name="Python">
-                    <img src={python} alt="Python" />
-                </div>
+              ))}
             </div>
-
-            <div className="skill-buttons">
-                <div className="skill-icon" data-name="MySQL">
-                    <img src={my} alt="MySQL" />
-                </div>
-                <div className="skill-icon" data-name="MS SQL Server">
-                    <img src={ms} alt="MS SQL Server" />
-                </div>
-                <div className="skill-icon" data-name="MongoDB">
-                    <img src={mongo} alt="MongoDB" />
-                </div>
-            </div>
-
-            <div className="skill-buttons">
-                <div className="skill-icon" data-name="Figma">
-                    <img src={figma} alt="Figma" />
-                </div>
-                <div className="skill-icon" data-name="Adobe Illustrator">
-                    <img src={AI} alt="AI" />
-                </div>
-                <div className="skill-icon" data-name="Adobe Photoshop">
-                    <img src={PS} alt="PS" />
-                </div>
-                <div className="skill-icon" data-name="Adobe Indesign">
-                    <img src={In} alt="In" />
-                </div>
-            </div>
-
-            <div className="skill-buttons">
-                <div className="skill-icon" data-name="Git">
-                    <img src={git} alt="Git" />
-                </div>
-                <div className="skill-icon" data-name="GitHub">
-                    <img src={github} alt="GitHub" />
-                </div>
-                <div className="skill-icon" data-name="cPanel">
-                    <img src={cpanel} alt="cPanel" />
-                </div>
-            </div>
-
-        </div>
-    )
-
-}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default About;
